@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const net = require('net');
 const Order = require('./orderModel');
+require('dotenv').config();
+
 
 // Connect to MongoDB database
 mongoose.connect('mongodb://localhost:27017/printer-db', { useNewUrlParser: true, useUnifiedTopology: true });
